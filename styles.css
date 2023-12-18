@@ -110,6 +110,7 @@ nav ul li {
 nav a {
     text-decoration: none; /* Remove underline from links */
     color: white;
+    font-size: 20px;
 }
 
 .left {
@@ -119,6 +120,7 @@ nav a {
 
 li:hover {
     background-color: #111;
+    text-decoration: underline;
 }
 
 main {
