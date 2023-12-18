@@ -8,7 +8,75 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    
+    <style>
+        header{
+            background-color: #1b1ba590;
+        }
+        body{
+            margin-top: 0%;
+            background-color: #1C1BA5;
+        }
+
+        .image{
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-blue-tech-smart-city-background-citysmart-citybanner-backgroundbackgroundbuildingbluecity-image_68303.jpg');
+            height: 550px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            opacity: 80%;
+            margin-top: 0%;
+        }
+        h1{
+            text-align: center;
+        }
+
+
+        .all_skills {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+        }
+        
+        .skill {
+            border: 1px solid gray;
+            display: block;
+            border-radius: 6px;
+            text-align: center;
+            margin: 50px;
+            padding: 10px;
+            width: 3in;
+            height: 3in;
+            font-size: 20px;
+            box-shadow: 0 3px 10px gray;
+        }
+        
+        .skill img {
+            height: 150px;
+            width: 150px;
+            align-items: center;
+        }
+        
+        .skills h3 {
+            align-items: center;
+            
+            margin-block-start: 8px;
+            margin-block-end: 5px;
+            font-weight: bold;
+        } 
+        
+        .skills p {
+            align-items: center;
+            font-size: 15px;
+            color: gray;
+            margin-block-start: 5px;
+            margin-block-end: 5px;
+        } 
+        
+        .flex_center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,21 +89,45 @@
             </ul>
         </nav>
     </header>
+    <div class="image"></div>
+    <h1><b><i>About Me</i></b></h1>
+    <h2><b><i>Skills</i></b></h2>
+    <section id="skills">
+        <div style="clear:both;"></div>
+  
+        <div class="all_skills">
+          <div class="skill">
+            <img src="html5.png"/>
+            <h3>HTML</h3>
+            
+          </div>  
+  
+          <div class="skill">
+            <img src="js.jpeg"/>
+            <h3>JavaScript</h3>
+          </div> 
+  
+          <div class="skill">
+              <img src="node1.png"/>
+              <h3>NodeJs</h3>
+            </div> 
+  
+            <div class="skill">
+              <img src="react.png"/>
+              <h3>React</h3>
+            </div>  
+            
+            <div class="skill">
+              <img src="java.png"/>
+              <h3>Java</h3>
+            </div>  
+    
+          <!-- Add more skills here -->
+  
+  
+        </div>
+        <a style="color: #007bff; text-decoration: none; font-weight: bold;" href="resume.pdf" download="Your_Name_Resume.pdf">Download Resume</a>
 
-    <main>
-        <section id="about">
-            <center><h2>About Me</h2>
-            <div>
-                <ul>
-                    <li>My name is Adarsh Dubey</li>
-                    <li>I am from Varanasi (The City Of Lord Shiva)</li>
-                    <li>I pursuing MCA form KIET Group Of Instutations which is afflited to AKTU Lacknow</li>
-                    <li>I completed my graduation from SMS Varanasi at my home city Varanasi.  </li>
-                    
-                </ul>
-                <p style="margin-left: 60px; margin-right: 60px;">I am a dedicated web developer with a strong background in front-end and back-end web development. I love creating responsive and user-friendly websites that make a difference.</p>
-            </center>
-        </section>
-    </main>
+      </section>
 </body>
 </html>
