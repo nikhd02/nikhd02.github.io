@@ -1,0 +1,159 @@
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 33, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0; /* Added padding */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjusted height for header */
+}
+
+.center {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.right {
+    /* Right-aligned content styles here */
+    margin-right: 20px;
+}
+
+button {
+    background-color: rgb(24, 24, 58);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 33);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imge{
+    margin-top: 4%;
+    width: 60%;
+    height: 50%;
+    border-radius: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px; /* Make room for the fixed header */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Adjusted alignment */
+    align-items: center;
+    height: 60px;
+    background-color: transparent;
+    padding: 10px 20px; /* Added padding */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+}
+
+nav ul li {
+    display: inline; /* Display li elements inline */
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white;
+}
+
+.left {
+    font-size: 1.5rem;
+    
+}
+
+li:hover {
+    background-color: #111;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 60px); /* Adjusted height to fit viewport */
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    
+}
+
+button {
+    background-color: rgb(24, 24, 58);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 33);
+}
+
+h1 {
+    font-size: 2.5rem; /* Increase the size of the heading */
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0; /* Added margin */
+}
