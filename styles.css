@@ -22,10 +22,11 @@ header {
 }
 
 main {
+    margin-top: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 60px); /* Adjusted height for header */
+    min-height: calc(100vh - 100vh); /* Adjusted height for header */
 }
 
 .center {
