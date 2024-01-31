@@ -4,13 +4,13 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #6060bd;
+  background-color: #000000;
 }
 
 .calculator {
   text-align: center;
   color: #f53232;
-  background-color: #2b7edc;
+  background-color: #3d3d3d;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -25,7 +25,7 @@ body {
   border-radius: 4px;
   color: #000000;
   text-align: right;
-  background-color: skyblue;
+  background-color: rgb(255, 255, 255);
 }
 
 .keys {
@@ -41,12 +41,12 @@ body {
   font-size: 20px;
   border: none;
   border-radius: 50px;
-  background-color: greenyellow;
+  background-color: rgb(125, 125, 124);
   cursor: pointer;
 }
 
 .keys button:hover {
-  background-color: #28fbed;
+  background-color: #e0bb84;
 }
 
 .keys button:active {
