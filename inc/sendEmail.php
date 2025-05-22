@@ -3,6 +3,9 @@
 // Replace this with your own email address
 $siteOwnersEmail = 'dubeyaadarsh221305@gmail.com';
 
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 if($_POST) {
 
@@ -26,9 +29,8 @@ if($_POST) {
    // Subject
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
-
    // Set Message
-   $message .= "Email from: " . $name . "<br />";
+   $message = "Email from: " . $name . "<br />";
 	$message .= "Email address: " . $email . "<br />";
    $message .= "Message: <br />";
    $message .= $contact_message;
@@ -43,27 +45,26 @@ if($_POST) {
  	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-
    if (!$error) {
-
-      ini_set("sendmail_from", $siteOwnersEmail); // for windows server
+      // Set the sender email for Windows server
+      ini_set("sendmail_from", $siteOwnersEmail);
+      
+      // Try to send the email
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-		if ($mail) { echo "OK"; }
-      else { echo "Something went wrong. Please try again."; }
-		
-	} # end if - no validation error
-
-	else {
-
-		$response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
-		$response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
-		$response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
-		
-		echo $response;
-
-	} # end if - there was a validation error
-
+      if ($mail) { 
+         echo "OK"; 
+      } else {
+         // Get the last error
+         $error = error_get_last();
+         echo "Something went wrong. Error: " . ($error ? $error['message'] : 'Unknown error');
+      }
+   } else {
+      $response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
+      $response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
+      $response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
+      
+      echo $response;
+   }
 }
-
 ?>
